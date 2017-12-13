@@ -20,3 +20,15 @@ typedef  NS_ENUM(NSInteger ,PayInputAlertView_Type){
  */
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title subTitle:(NSString *)subTitle type:(PayInputAlertView_Type)type buttonArr:(NSArray *)buttonArr;
 ```
+* 两种弹框的回调方法
+```
+/**
+ 手动验证的方法
+ */
+@property (nonatomic ,strong)void(^verifyPassWordHand)(NSString *password,UIButton *button);
+
+/**
+ 自动验证的方法
+ */
+@property (nonatomic ,strong)void(^verifyPassWordAuto)(NSString *password);
+```
