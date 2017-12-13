@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095B4C1F1FE0BA39000B06CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B4C1E1FE0BA39000B06CB /* AppDelegate.m */; };
+		095B4C221FE0BA39000B06CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B4C211FE0BA39000B06CB /* ViewController.m */; };
+		095B4C251FE0BA39000B06CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095B4C231FE0BA39000B06CB /* Main.storyboard */; };
+		095B4C271FE0BA39000B06CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095B4C261FE0BA39000B06CB /* Assets.xcassets */; };
+		095B4C2A1FE0BA39000B06CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095B4C281FE0BA39000B06CB /* LaunchScreen.storyboard */; };
+		095B4C2D1FE0BA39000B06CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B4C2C1FE0BA39000B06CB /* main.m */; };
+		095B4C371FE0BA39000B06CB /* PayInputAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B4C361FE0BA39000B06CB /* PayInputAlertViewTests.m */; };
+		095B4C421FE0BA39000B06CB /* PayInputAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B4C411FE0BA39000B06CB /* PayInputAlertViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		095B4C331FE0BA39000B06CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 095B4C121FE0BA38000B06CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095B4C191FE0BA39000B06CB;
+			remoteInfo = PayInputAlertView;
+		};
+		095B4C3E1FE0BA39000B06CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 095B4C121FE0BA38000B06CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095B4C191FE0BA39000B06CB;
+			remoteInfo = PayInputAlertView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		095B4C1A1FE0BA39000B06CB /* PayInputAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayInputAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		095B4C1D1FE0BA39000B06CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		095B4C1E1FE0BA39000B06CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		095B4C201FE0BA39000B06CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		095B4C211FE0BA39000B06CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		095B4C241FE0BA39000B06CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		095B4C261FE0BA39000B06CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		095B4C291FE0BA39000B06CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		095B4C2B1FE0BA39000B06CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095B4C2C1FE0BA39000B06CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		095B4C321FE0BA39000B06CB /* PayInputAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayInputAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		095B4C361FE0BA39000B06CB /* PayInputAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayInputAlertViewTests.m; sourceTree = "<group>"; };
+		095B4C381FE0BA39000B06CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095B4C3D1FE0BA39000B06CB /* PayInputAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayInputAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		095B4C411FE0BA39000B06CB /* PayInputAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayInputAlertViewUITests.m; sourceTree = "<group>"; };
+		095B4C431FE0BA39000B06CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		095B4C171FE0BA39000B06CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095B4C2F1FE0BA39000B06CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095B4C3A1FE0BA39000B06CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095B4C111FE0BA38000B06CB = {
+			isa = PBXGroup;
+			children = (
+				095B4C1C1FE0BA39000B06CB /* PayInputAlertView */,
+				095B4C351FE0BA39000B06CB /* PayInputAlertViewTests */,
+				095B4C401FE0BA39000B06CB /* PayInputAlertViewUITests */,
+				095B4C1B1FE0BA39000B06CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		095B4C1B1FE0BA39000B06CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				095B4C1A1FE0BA39000B06CB /* PayInputAlertView.app */,
+				095B4C321FE0BA39000B06CB /* PayInputAlertViewTests.xctest */,
+				095B4C3D1FE0BA39000B06CB /* PayInputAlertViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		095B4C1C1FE0BA39000B06CB /* PayInputAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				095B4C1D1FE0BA39000B06CB /* AppDelegate.h */,
+				095B4C1E1FE0BA39000B06CB /* AppDelegate.m */,
+				095B4C201FE0BA39000B06CB /* ViewController.h */,
+				095B4C211FE0BA39000B06CB /* ViewController.m */,
+				095B4C231FE0BA39000B06CB /* Main.storyboard */,
+				095B4C261FE0BA39000B06CB /* Assets.xcassets */,
+				095B4C281FE0BA39000B06CB /* LaunchScreen.storyboard */,
+				095B4C2B1FE0BA39000B06CB /* Info.plist */,
+				095B4C2C1FE0BA39000B06CB /* main.m */,
+			);
+			path = PayInputAlertView;
+			sourceTree = "<group>";
+		};
+		095B4C351FE0BA39000B06CB /* PayInputAlertViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				095B4C361FE0BA39000B06CB /* PayInputAlertViewTests.m */,
+				095B4C381FE0BA39000B06CB /* Info.plist */,
+			);
+			path = PayInputAlertViewTests;
+			sourceTree = "<group>";
+		};
+		095B4C401FE0BA39000B06CB /* PayInputAlertViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				095B4C411FE0BA39000B06CB /* PayInputAlertViewUITests.m */,
+				095B4C431FE0BA39000B06CB /* Info.plist */,
+			);
+			path = PayInputAlertViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		095B4C191FE0BA39000B06CB /* PayInputAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095B4C461FE0BA39000B06CB /* Build configuration list for PBXNativeTarget "PayInputAlertView" */;
+			buildPhases = (
+				095B4C161FE0BA39000B06CB /* Sources */,
+				095B4C171FE0BA39000B06CB /* Frameworks */,
+				095B4C181FE0BA39000B06CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayInputAlertView;
+			productName = PayInputAlertView;
+			productReference = 095B4C1A1FE0BA39000B06CB /* PayInputAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		095B4C311FE0BA39000B06CB /* PayInputAlertViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095B4C491FE0BA39000B06CB /* Build configuration list for PBXNativeTarget "PayInputAlertViewTests" */;
+			buildPhases = (
+				095B4C2E1FE0BA39000B06CB /* Sources */,
+				095B4C2F1FE0BA39000B06CB /* Frameworks */,
+				095B4C301FE0BA39000B06CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095B4C341FE0BA39000B06CB /* PBXTargetDependency */,
+			);
+			name = PayInputAlertViewTests;
+			productName = PayInputAlertViewTests;
+			productReference = 095B4C321FE0BA39000B06CB /* PayInputAlertViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		095B4C3C1FE0BA39000B06CB /* PayInputAlertViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095B4C4C1FE0BA39000B06CB /* Build configuration list for PBXNativeTarget "PayInputAlertViewUITests" */;
+			buildPhases = (
+				095B4C391FE0BA39000B06CB /* Sources */,
+				095B4C3A1FE0BA39000B06CB /* Frameworks */,
+				095B4C3B1FE0BA39000B06CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095B4C3F1FE0BA39000B06CB /* PBXTargetDependency */,
+			);
+			name = PayInputAlertViewUITests;
+			productName = PayInputAlertViewUITests;
+			productReference = 095B4C3D1FE0BA39000B06CB /* PayInputAlertViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		095B4C121FE0BA38000B06CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = HLY;
+				TargetAttributes = {
+					095B4C191FE0BA39000B06CB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					095B4C311FE0BA39000B06CB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 095B4C191FE0BA39000B06CB;
+					};
+					095B4C3C1FE0BA39000B06CB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 095B4C191FE0BA39000B06CB;
+					};
+				};
+			};
+			buildConfigurationList = 095B4C151FE0BA38000B06CB /* Build configuration list for PBXProject "PayInputAlertView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 095B4C111FE0BA38000B06CB;
+			productRefGroup = 095B4C1B1FE0BA39000B06CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				095B4C191FE0BA39000B06CB /* PayInputAlertView */,
+				095B4C311FE0BA39000B06CB /* PayInputAlertViewTests */,
+				095B4C3C1FE0BA39000B06CB /* PayInputAlertViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		095B4C181FE0BA39000B06CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095B4C2A1FE0BA39000B06CB /* LaunchScreen.storyboard in Resources */,
+				095B4C271FE0BA39000B06CB /* Assets.xcassets in Resources */,
+				095B4C251FE0BA39000B06CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095B4C301FE0BA39000B06CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095B4C3B1FE0BA39000B06CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		095B4C161FE0BA39000B06CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095B4C221FE0BA39000B06CB /* ViewController.m in Sources */,
+				095B4C2D1FE0BA39000B06CB /* main.m in Sources */,
+				095B4C1F1FE0BA39000B06CB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095B4C2E1FE0BA39000B06CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095B4C371FE0BA39000B06CB /* PayInputAlertViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095B4C391FE0BA39000B06CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095B4C421FE0BA39000B06CB /* PayInputAlertViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		095B4C341FE0BA39000B06CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095B4C191FE0BA39000B06CB /* PayInputAlertView */;
+			targetProxy = 095B4C331FE0BA39000B06CB /* PBXContainerItemProxy */;
+		};
+		095B4C3F1FE0BA39000B06CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095B4C191FE0BA39000B06CB /* PayInputAlertView */;
+			targetProxy = 095B4C3E1FE0BA39000B06CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		095B4C231FE0BA39000B06CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095B4C241FE0BA39000B06CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		095B4C281FE0BA39000B06CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				095B4C291FE0BA39000B06CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		095B4C441FE0BA39000B06CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		095B4C451FE0BA39000B06CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		095B4C471FE0BA39000B06CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PayInputAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tongzhi.PayInputAlertView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		095B4C481FE0BA39000B06CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PayInputAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tongzhi.PayInputAlertView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		095B4C4A1FE0BA39000B06CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PayInputAlertViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tongzhi.PayInputAlertViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayInputAlertView.app/PayInputAlertView";
+			};
+			name = Debug;
+		};
+		095B4C4B1FE0BA39000B06CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PayInputAlertViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tongzhi.PayInputAlertViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayInputAlertView.app/PayInputAlertView";
+			};
+			name = Release;
+		};
+		095B4C4D1FE0BA39000B06CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PayInputAlertViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tongzhi.PayInputAlertViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PayInputAlertView;
+			};
+			name = Debug;
+		};
+		095B4C4E1FE0BA39000B06CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PayInputAlertViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.tongzhi.PayInputAlertViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PayInputAlertView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		095B4C151FE0BA38000B06CB /* Build configuration list for PBXProject "PayInputAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095B4C441FE0BA39000B06CB /* Debug */,
+				095B4C451FE0BA39000B06CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095B4C461FE0BA39000B06CB /* Build configuration list for PBXNativeTarget "PayInputAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095B4C471FE0BA39000B06CB /* Debug */,
+				095B4C481FE0BA39000B06CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095B4C491FE0BA39000B06CB /* Build configuration list for PBXNativeTarget "PayInputAlertViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095B4C4A1FE0BA39000B06CB /* Debug */,
+				095B4C4B1FE0BA39000B06CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095B4C4C1FE0BA39000B06CB /* Build configuration list for PBXNativeTarget "PayInputAlertViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095B4C4D1FE0BA39000B06CB /* Debug */,
+				095B4C4E1FE0BA39000B06CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 095B4C121FE0BA38000B06CB /* Project object */;
+}
