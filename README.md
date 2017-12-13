@@ -6,4 +6,17 @@ typedef  NS_ENUM(NSInteger ,PayInputAlertView_Type){
     PayInputAlertView_Hand,// 手动验证
 };
 ```
-* 自动验证样式的弹框创建方法
+* 弹框创建方法
+```
+/**
+ 创建弹框
+
+ @param frame 坐标
+ @param title 标题
+ @param subTitle 副标题
+ @param type 类型
+ @param buttonArr 按钮数组
+ @return 返回控件
+ */
+- (id)initWithFrame:(CGRect)frame title:(NSString *)title subTitle:(NSString *)subTitle type:(PayInputAlertView_Type)type buttonArr:(NSArray *)buttonArr;
+```
