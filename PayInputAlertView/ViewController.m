@@ -38,7 +38,7 @@
 #pragma mark - 创建自动验证的密码弹框
 - (void)createAutoPayInputAlertView{
     PayInputAlertView *payView = [[PayInputAlertView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) title:@"主标题" subTitle:@"副标题" type:PayInputAlertView_Auto buttonArr:@[@"取消",@"确定"]];
-    
+    // 回调
     payView.verifyPassWordAuto = ^(NSString *password) {
         NSLog(@"返回密码%@",password);
     };
