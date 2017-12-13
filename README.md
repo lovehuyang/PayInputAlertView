@@ -1,5 +1,5 @@
 # PayInputAlertView
-![](https://github.com/lovehuyang/PayInputAlertView/raw/master/Image/1.png)
+![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/1.png)
 自定义支付密码输入框分为两种样式
 ```
 typedef  NS_ENUM(NSInteger ,PayInputAlertView_Type){
