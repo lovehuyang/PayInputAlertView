@@ -1,5 +1,5 @@
 # PayInputAlertView
-先看两张效果图
+## 先看两张效果图
 
 ![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/1.png)![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/2.png)
 
