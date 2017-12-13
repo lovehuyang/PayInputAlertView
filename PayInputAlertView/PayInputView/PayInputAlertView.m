@@ -26,26 +26,9 @@
     UIView *_viewBG;
     // 视图
     UIView *_view;
-    // 标题
-    UILabel *_lable_title;
-    // 二级标题
-    UILabel *_lable_subTitle;
-    // 真正接受密码输入的框   看不见
+    
+    // 接受密码输入的文本框，看不见
     UITextField *_TF;
-    // 可见的输入框
-    UIView *_view_box1;
-    UIView *_view_box2;
-    UIView *_view_box3;
-    UIView *_view_box4;
-    UIView *_view_box5;
-    UIView *_view_box6;
-    // 密码点
-    UILabel *_lable_point1;
-    UILabel *_lable_point2;
-    UILabel *_lable_point3;
-    UILabel *_lable_point4;
-    UILabel *_lable_point5;
-    UILabel *_lable_point6;
 }
 
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title subTitle:(NSString *)subTitle type:(PayInputAlertView_Type)type buttonArr:(NSArray *)buttonArr{
@@ -58,7 +41,8 @@
 }
 
 -(void)setupUIWithTitle:(NSString *)title WithSubTitle:(NSString *)subTitle{
-    //蒙版
+    
+    // 蒙版
     UIView *viewBG = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     viewBG.backgroundColor = [UIColor blackColor];
     viewBG.alpha = 0.2;
@@ -67,7 +51,8 @@
     [viewBG addGestureRecognizer:tap];
     _viewBG = viewBG;
     [self addSubview:_viewBG];
-    //输入密码View
+    
+    // 输入密码View
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 275, 160 )];
     view.center = CGPointMake(viewBG.center.x, viewBG.frame.size.height/5*2);
     [view.layer setCornerRadius:3];
@@ -77,27 +62,28 @@
     _view = view;
     [self addSubview:_view];
     
-    ///标题
-    _lable_title = [[UILabel alloc]init];
-    _lable_title.frame = CGRectMake(10, 20, view.frame.size.width-20, 15);
-    _lable_title.text = [NSString stringWithFormat:@"%@",title];
-    _lable_title.textAlignment=1;
-    _lable_title.font = DEFAULTFONT(15);
-    _lable_title.textColor = [UIColor darkGrayColor];
-    [_view addSubview:_lable_title];
+    // 标题
+    UILabel *lable_title = [[UILabel alloc]init];
+    lable_title.frame = CGRectMake(10, 20, view.frame.size.width-20, 15);
+    lable_title.text = [NSString stringWithFormat:@"%@",title];
+    lable_title.textAlignment=1;
+    lable_title.font = DEFAULTFONT(15);
+    lable_title.textColor = [UIColor darkGrayColor];
+    [_view addSubview:lable_title];
     
-    ///二级标题
-    _lable_subTitle = [[UILabel alloc]init];
-    _lable_subTitle.frame = CGRectMake(10, _lable_title.frame.origin.y+_lable_title.frame.size.height+20, view.frame.size.width-20, 20);
-    _lable_subTitle.text = [NSString stringWithFormat:@"%@",subTitle];
-    _lable_subTitle.textAlignment=1;
-    _lable_subTitle.font = DEFAULTFONT(20);
-    _lable_subTitle.textColor = TextRedColor;
-    [_view addSubview:_lable_subTitle];
+    // 二级标题
+    UILabel *lable_subTitle = [[UILabel alloc]init];
+    lable_subTitle.frame = CGRectMake(10, lable_title.frame.origin.y+lable_title.frame.size.height+20, view.frame.size.width-20, 20);
+    lable_subTitle.text = [NSString stringWithFormat:@"%@",subTitle];
+    lable_subTitle.textAlignment=1;
+    lable_subTitle.font = DEFAULTFONT(20);
+    lable_subTitle.textColor = TextRedColor;
+    [_view addSubview:lable_subTitle];
     if([[NSString stringWithFormat:@"%@",subTitle] isEqualToString:@""]) {
-        _lable_subTitle.frame = CGRectMake(10, _lable_title.frame.origin.y+_lable_title.frame.size.height, view.frame.size.width-20, 0);
+        lable_subTitle.frame = CGRectMake(10, lable_title.frame.origin.y+lable_title.frame.size.height, view.frame.size.width-20, 0);
     }
-    ///  TF
+    
+    // TF文本框
     _TF = [[UITextField alloc]init];
     _TF.frame = CGRectMake(0, 0, 0, 0);
     _TF.delegate = self;
@@ -105,102 +91,31 @@
     [_TF addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     [_view addSubview:_TF];
     
-    ///  假的输入框
-    _view_box1 = [[UIView alloc]initWithFrame:CGRectMake((view.frame.size.width-boxWidth*6)/2, CGRectGetMaxY(_lable_subTitle.frame)+20, boxWidth, boxWidth)];
-    [_view_box1.layer setBorderWidth:0.5];
-    _view_box1.backgroundColor = DefaultBGColor;
-    _view_box1.layer.borderColor = [LineColor CGColor];
-    [_view addSubview:_view_box1];
-    
-    _view_box2 = [[UIView alloc]initWithFrame:CGRectMake((view.frame.size.width-boxWidth*6)/2+boxWidth*1-0.5, _view_box1.frame.origin.y, boxWidth, boxWidth)];
-    _view_box2.backgroundColor = DefaultBGColor;
-    [_view_box2.layer setBorderWidth:0.5];
-    _view_box2.layer.borderColor = [LineColor CGColor];
-    [_view addSubview:_view_box2];
-    
-    _view_box3 = [[UIView alloc]initWithFrame:CGRectMake((view.frame.size.width-boxWidth*6)/2+boxWidth*2-1, _view_box1.frame.origin.y, boxWidth, boxWidth)];
-    [_view_box3.layer setBorderWidth:0.5];
-    _view_box3.backgroundColor = DefaultBGColor;
-    _view_box3.layer.borderColor = [LineColor CGColor];
-    [_view addSubview:_view_box3];
-    
-    _view_box4 = [[UIView alloc]initWithFrame:CGRectMake((view.frame.size.width-boxWidth*6)/2+boxWidth*3-1.5, _view_box1.frame.origin.y, boxWidth, boxWidth)];
-    [_view_box4.layer setBorderWidth:0.5];
-    _view_box4.backgroundColor = DefaultBGColor;
-    _view_box4.layer.borderColor = [LineColor CGColor];
-    [_view addSubview:_view_box4];
-    
-    _view_box5 = [[UIView alloc]initWithFrame:CGRectMake((view.frame.size.width-boxWidth*6)/2+boxWidth*4-2, _view_box1.frame.origin.y, boxWidth, boxWidth)];
-    [_view_box5.layer setBorderWidth:0.5];
-    _view_box5.backgroundColor = DefaultBGColor;
-    _view_box5.layer.borderColor = [LineColor CGColor];
-    [_view addSubview:_view_box5];
-    
-    _view_box6 = [[UIView alloc]initWithFrame:CGRectMake((view.frame.size.width-boxWidth*6)/2+boxWidth*5-2.5, _view_box1.frame.origin.y, boxWidth, boxWidth)];
-    [_view_box6.layer setBorderWidth:0.5];
-    _view_box6.backgroundColor = DefaultBGColor;
-    _view_box6.layer.borderColor = [LineColor CGColor];
-    [_view addSubview:_view_box6];
-    
-    
-    ///   密码点
-    _lable_point1 = [[UILabel alloc]init];
-    _lable_point1.frame = CGRectMake((_view_box1.frame.size.width-10)/2, (_view_box1.frame.size.width-10)/2, 10, 10);
-    [_lable_point1.layer setCornerRadius:5];
-    [_lable_point1.layer setMasksToBounds:YES];
-    _lable_point1.backgroundColor = [UIColor blackColor];
-    [_view_box1 addSubview:_lable_point1];
-    
-    _lable_point2 = [[UILabel alloc]init];
-    _lable_point2.frame = CGRectMake((_view_box1.frame.size.width-10)/2, (_view_box1.frame.size.width-10)/2, 10, 10);
-    [_lable_point2.layer setCornerRadius:5];
-    [_lable_point2.layer setMasksToBounds:YES];
-    _lable_point2.backgroundColor = [UIColor blackColor];
-    [_view_box2 addSubview:_lable_point2];
-    
-    
-    _lable_point3 = [[UILabel alloc]init];
-    _lable_point3.frame = CGRectMake((_view_box1.frame.size.width-10)/2, (_view_box1.frame.size.width-10)/2, 10, 10);
-    [_lable_point3.layer setCornerRadius:5];
-    [_lable_point3.layer setMasksToBounds:YES];
-    _lable_point3.backgroundColor = [UIColor blackColor];
-    [_view_box3 addSubview:_lable_point3];
-    
-    _lable_point4 = [[UILabel alloc]init];
-    _lable_point4.frame = CGRectMake((_view_box1.frame.size.width-10)/2, (_view_box1.frame.size.width-10)/2, 10, 10);
-    [_lable_point4.layer setCornerRadius:5];
-    [_lable_point4.layer setMasksToBounds:YES];
-    _lable_point4.backgroundColor = [UIColor blackColor];
-    [_view_box4 addSubview:_lable_point4];
-    
-    _lable_point5 = [[UILabel alloc]init];
-    _lable_point5.frame = CGRectMake((_view_box1.frame.size.width-10)/2, (_view_box1.frame.size.width-10)/2, 10, 10);
-    [_lable_point5.layer setCornerRadius:5];
-    [_lable_point5.layer setMasksToBounds:YES];
-    _lable_point5.backgroundColor = [UIColor blackColor];
-    [_view_box5 addSubview:_lable_point5];
-    
-    _lable_point6 = [[UILabel alloc]init];
-    _lable_point6.frame = CGRectMake((_view_box1.frame.size.width-10)/2, (_view_box1.frame.size.width-10)/2, 10, 10);
-    [_lable_point6.layer setCornerRadius:5];
-    [_lable_point6.layer setMasksToBounds:YES];
-    _lable_point6.backgroundColor = [UIColor blackColor];
-    [_view_box6 addSubview:_lable_point6];
-    
-    _lable_point1.hidden=YES;
-    _lable_point2.hidden=YES;
-    _lable_point3.hidden=YES;
-    _lable_point4.hidden=YES;
-    _lable_point5.hidden=YES;
-    _lable_point6.hidden=YES;
-    
-    
+    //  假的输入框和假的密码点
+    for (int i = 0; i < 6; i ++) {
+        UIView *tempView = [UIView new];
+        tempView.frame = CGRectMake((view.frame.size.width-boxWidth*6)/2 + boxWidth *i - i * 0.5, CGRectGetMaxY(lable_subTitle.frame)+20, boxWidth, boxWidth);
+        tempView.backgroundColor = DefaultBGColor;
+        tempView.layer.borderColor = [LineColor CGColor];
+        [tempView.layer setBorderWidth:0.5];
+        tempView.tag = 10 + i;
+        [_view addSubview:tempView];
+        
+        UILabel *tempLab = [[UILabel alloc]init];
+        tempLab.frame = CGRectMake((boxWidth-10)/2, (boxWidth-10)/2, 10, 10);
+        [tempLab.layer setCornerRadius:5];
+        [tempLab.layer setMasksToBounds:YES];
+        tempLab.backgroundColor = [UIColor blackColor];
+        [tempLab setHidden:YES];
+        [tempView addSubview:tempLab];
+    }
+
     if(_buttonArr.count>0 && _type == PayInputAlertView_Hand) {
         CGRect viewFrame = _view.frame;
         viewFrame.size.height +=30;
         _view.frame = viewFrame;
         
-        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_view_box1.frame)+15, view.frame.size.width, 0.5)];
+        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(lable_subTitle.frame)+20 +15 + boxWidth, view.frame.size.width, 0.5)];
         line.backgroundColor = LineColor;
         [view addSubview:line];
         for(int i=0;i<_buttonArr.count;i++) {
@@ -236,74 +151,18 @@
 #pragma mark - 文本框内容发生改变
 - (void) textFieldDidChange:(UITextField*) sender {
     UITextField *_field = sender;
-    switch (_field.text.length) {
-        case 0:{
-            _lable_point1.hidden=YES;
-            _lable_point2.hidden=YES;
-            _lable_point3.hidden=YES;
-            _lable_point4.hidden=YES;
-            _lable_point5.hidden=YES;
-            _lable_point6.hidden=YES;
+    
+    for (int i = 0; i < 6; i ++) {
+//        NSLog(@"下标：%d - 文字长度：%lu - 文本框内容：%@",i,_field.text.length,sender.text);
+        UIView *tempView = (UIView *)[_view viewWithTag:10 + i];
+        UILabel *tempLab = (UILabel *)[[tempView subviews] firstObject];
+        if (i < _field.text.length) {
+               tempLab.hidden = NO;
+        }else{
+            tempLab.hidden = YES;
         }
-            break;
-        case 1:{
-            _lable_point1.hidden=NO;
-            _lable_point2.hidden=YES;
-            _lable_point3.hidden=YES;
-            _lable_point4.hidden=YES;
-            _lable_point5.hidden=YES;
-            _lable_point6.hidden=YES;
-        }
-            break;
-        case 2:{
-            _lable_point1.hidden=NO;
-            _lable_point2.hidden=NO;
-            _lable_point3.hidden=YES;
-            _lable_point4.hidden=YES;
-            _lable_point5.hidden=YES;
-            _lable_point6.hidden=YES;
-        }
-            break;
-        case 3:{
-            _lable_point1.hidden=NO;
-            _lable_point2.hidden=NO;
-            _lable_point3.hidden=NO;
-            _lable_point4.hidden=YES;
-            _lable_point5.hidden=YES;
-            _lable_point6.hidden=YES;
-        }
-            break;
-        case 4:{
-            _lable_point1.hidden=NO;
-            _lable_point2.hidden=NO;
-            _lable_point3.hidden=NO;
-            _lable_point4.hidden=NO;
-            _lable_point5.hidden=YES;
-            _lable_point6.hidden=YES;
-        }
-            break;
-        case 5:{
-            _lable_point1.hidden=NO;
-            _lable_point2.hidden=NO;
-            _lable_point3.hidden=NO;
-            _lable_point4.hidden=NO;
-            _lable_point5.hidden=NO;
-            _lable_point6.hidden=YES;
-        }
-            break;
-        case 6:{
-            _lable_point1.hidden=NO;
-            _lable_point2.hidden=NO;
-            _lable_point3.hidden=NO;
-            _lable_point4.hidden=NO;
-            _lable_point5.hidden=NO;
-            _lable_point6.hidden=NO;
-        }
-            break;
-            
-        default:
-            break;
     }
+
     if(_type == PayInputAlertView_Auto) {//自动验证
         if (_field.text.length==6){
             // 延迟执行
@@ -312,7 +171,7 @@
                     [self autoVerifyPassWord:_field.text];
                 }];
             } else {
-                // Fallback on earlier versions
+
             }
         }
     } else {//非自动验证
