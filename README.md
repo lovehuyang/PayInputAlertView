@@ -1,5 +1,9 @@
 # PayInputAlertView
+先看两张效果图
 ![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/1.png)
+手动验证效果
+![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/2.png)
+自动验证效果
 自定义支付密码输入框分为两种样式
 ```
 typedef  NS_ENUM(NSInteger ,PayInputAlertView_Type){
