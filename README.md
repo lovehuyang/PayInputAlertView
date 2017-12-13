@@ -3,14 +3,14 @@
 
 ![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/1.png)![](https://github.com/lovehuyang/PayInputAlertView/blob/master/PayInputAlertView/Image/2.png)
 
-自定义支付密码输入框分为两种样式
+## 自定义支付密码输入框分为两种样式
 ```
 typedef  NS_ENUM(NSInteger ,PayInputAlertView_Type){
     PayInputAlertView_Auto,// 自动验证
     PayInputAlertView_Hand,// 手动验证
 };
 ```
-* 弹框创建方法
+## 弹框创建方法
 ```
 /**
  创建弹框
@@ -24,7 +24,7 @@ typedef  NS_ENUM(NSInteger ,PayInputAlertView_Type){
  */
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title subTitle:(NSString *)subTitle type:(PayInputAlertView_Type)type buttonArr:(NSArray *)buttonArr;
 ```
-* 两种弹框的回调方法
+## 两种弹框的回调方法
 ```
 /**
  手动验证的方法
