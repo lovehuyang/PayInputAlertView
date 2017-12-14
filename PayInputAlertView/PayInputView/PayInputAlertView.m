@@ -26,7 +26,6 @@
     UIView *_viewBG;
     // 视图
     UIView *_view;
-    
     // 接受密码输入的文本框，看不见
     UITextField *_TF;
 }
@@ -45,7 +44,7 @@
     // 蒙版
     UIView *viewBG = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     viewBG.backgroundColor = [UIColor blackColor];
-    viewBG.alpha = 0.6;
+    viewBG.alpha = 0.0;
     viewBG.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeFromView)];
     [viewBG addGestureRecognizer:tap];
@@ -60,6 +59,7 @@
     view.backgroundColor = [UIColor whiteColor];
     view.userInteractionEnabled = YES;
     _view = view;
+    _view.alpha = 0;
     [self addSubview:_view];
     
     // 标题
@@ -153,7 +153,6 @@
     UITextField *_field = sender;
     
     for (int i = 0; i < 6; i ++) {
-//        NSLog(@"下标：%d - 文字长度：%lu - 文本框内容：%@",i,_field.text.length,sender.text);
         UIView *tempView = (UIView *)[_view viewWithTag:10 + i];
         UILabel *tempLab = (UILabel *)[[tempView subviews] firstObject];
         if (i < _field.text.length) {
@@ -193,8 +192,10 @@
     [[UIApplication sharedApplication].delegate.window addSubview:self];
     [_TF becomeFirstResponder];
     _view.transform = CGAffineTransformMakeScale(1.21f, 1.21f);
-    [UIView animateWithDuration:.5f delay:0.f usingSpringWithDamping:.7f initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:.8f delay:0.f usingSpringWithDamping:.7f initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _view.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
+        _viewBG.alpha = 0.5;
+        _view.alpha = 1;
 
     } completion:nil];
 }
@@ -203,7 +204,7 @@
 - (void)removeFromView {
     [_TF resignFirstResponder];
     _view.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
-    [UIView animateWithDuration:.5f delay:0.f usingSpringWithDamping:.7f initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:.8f delay:0.f usingSpringWithDamping:.7f initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _view.transform = CGAffineTransformMakeScale(1.21f, 1.21f);
         _view.alpha = 0;
         _viewBG.alpha = 0;
