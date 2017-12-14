@@ -45,7 +45,7 @@
     // 蒙版
     UIView *viewBG = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     viewBG.backgroundColor = [UIColor blackColor];
-    viewBG.alpha = 0.2;
+    viewBG.alpha = 0.6;
     viewBG.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeFromView)];
     [viewBG addGestureRecognizer:tap];
